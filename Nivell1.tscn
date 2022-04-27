@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Backgrounds/platformer_background_3/platformer_background_3.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PlatformerBackground3" type="Sprite" parent="."]
+position = Vector2( 576, 326 )
+scale = Vector2( 1.03073, 1.02222 )
+texture = ExtResource( 1 )
