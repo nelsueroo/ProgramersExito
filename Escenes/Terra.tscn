@@ -1,16 +1,28 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Botmalo.tscn" type="PackedScene" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 185.5, 20 )
+extents = Vector2( 1761, 29 )
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -147.0
-margin_top = 23.0
-margin_right = 220.0
-margin_bottom = 63.0
+margin_left = -1634.0
+margin_top = 96.0
+margin_right = 1875.0
+margin_bottom = 151.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 37, 42 )
+position = Vector2( 114, 124 )
 shape = SubResource( 1 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2, -83 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
