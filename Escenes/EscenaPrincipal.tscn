@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Escenes/EscenaPrincipal.gd" type="Script" id=1]
 [ext_resource path="res://platformer_background_1/platformer_background_1.png" type="Texture" id=2]
@@ -8,13 +8,12 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 1021.0
 margin_bottom = 600.0
-script = ExtResource( 1 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="PlatformerBackground1" type="Sprite" parent="."]
-position = Vector2( 509.5, 298.5 )
-scale = Vector2( 0.532812, 0.556482 )
+position = Vector2( 509.5, 296.5 )
+scale = Vector2( 0.532812, 0.552778 )
 texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
