@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://EscenaPrincipal.gd" type="Script" id=1]
+[ext_resource path="res://Escenes/EscenaPrincipal.gd" type="Script" id=1]
 [ext_resource path="res://platformer_background_1/platformer_background_1.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
