@@ -42,3 +42,7 @@ func anima(velocitat):
 		$AnimatedSprite.play("salta")
 	
 
+
+
+func _on_MortTerra_body_entered(body):
+	get_tree().change_scene("res://Escenes/Nivell1.tscn")

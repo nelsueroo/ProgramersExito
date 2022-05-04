@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1767, 38.5 )
+
+[node name="MortTerra" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, 202.5 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = -1779.0
+margin_top = 172.0
+margin_right = 1792.0
+margin_bottom = 225.0

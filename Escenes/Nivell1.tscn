@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Escenes/TerraMadera.tscn" type="PackedScene" id=1]
 [ext_resource path="res://personatge/Personatge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Backgrounds/platformer_background_3/platformer_background_3.png" type="Texture" id=3]
 [ext_resource path="res://Escenes/Escalera.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Escenes/MortTerra.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="PlatformerBackground3" type="Sprite" parent="."]
-position = Vector2( 567.5, 310.5 )
-scale = Vector2( 1.41719, 1.3713 )
+position = Vector2( 567.5, 238.501 )
+scale = Vector2( 1.41719, 1.50463 )
 texture = ExtResource( 3 )
 
 [node name="Personatge" parent="." instance=ExtResource( 2 )]
@@ -17,6 +18,8 @@ position = Vector2( 136, 134 )
 
 [node name="Camera2D" type="Camera2D" parent="Personatge"]
 current = true
+limit_left = -784
+limit_bottom = 1000
 
 [node name="TerraMadera" parent="." instance=ExtResource( 1 )]
 position = Vector2( 194, 251 )
@@ -24,8 +27,16 @@ position = Vector2( 194, 251 )
 [node name="TerraMadera2" parent="." instance=ExtResource( 1 )]
 position = Vector2( -194, 251 )
 
+[node name="TerraMadera3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -575, 251 )
+
 [node name="Escalera" parent="." instance=ExtResource( 4 )]
 position = Vector2( 417, 236 )
 
 [node name="Escalera2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 659, 357 )
+
+[node name="MortTerra" parent="." instance=ExtResource( 5 )]
+position = Vector2( 717, 565 )
+
+[connection signal="body_entered" from="MortTerra" to="Personatge" method="_on_MortTerra_body_entered"]
