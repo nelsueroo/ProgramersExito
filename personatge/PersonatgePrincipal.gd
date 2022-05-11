@@ -1,10 +1,14 @@
 extends KinematicBody2D
 
-var velocitat_base = 250
+var velocitat_base = 100
 var direccio = Vector2.DOWN
 var velocitat = Vector2.ZERO
 var gravetat= Vector2.DOWN * 980
+<<<<<<< Updated upstream
 var velocitat_salt = -400
+=======
+var velocitat_salt = -350
+>>>>>>> Stashed changes
  
 
 
