@@ -1,6 +1,5 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Items/Building/nature-paltformer-tileset-16x16.png" type="Texture" id=1]
 [ext_resource path="res://personatge/Personatge.tscn" type="PackedScene" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
@@ -26,7 +25,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 
 [sub_resource type="TileSet" id=5]
 0/name = "nature-paltformer-tileset-16x16.png 0"
-0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 32, 128, 32, 32 )
@@ -49,7 +47,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 0/shapes = [  ]
 0/z_index = 0
 4/name = "nature-paltformer-tileset-16x16.png 4"
-4/texture = ExtResource( 1 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 80, 32, 16, 16 )
@@ -70,7 +67,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 4/z_index = 0
 5/name = "nature-paltformer-tileset-16x16.png 5"
-5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 112, 16, 16 )
@@ -84,7 +80,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 5/shapes = [  ]
 5/z_index = 0
 6/name = "nature-paltformer-tileset-16x16.png 6"
-6/texture = ExtResource( 1 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 32, 48, 16, 16 )
@@ -105,7 +100,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 6/z_index = 0
 7/name = "nature-paltformer-tileset-16x16.png 7"
-7/texture = ExtResource( 1 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 16, 16 )
@@ -126,7 +120,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 7/z_index = 0
 8/name = "nature-paltformer-tileset-16x16.png 8"
-8/texture = ExtResource( 1 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 32, 80, 16, 16 )
@@ -147,7 +140,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 8/z_index = 0
 9/name = "nature-paltformer-tileset-16x16.png 9"
-9/texture = ExtResource( 1 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 32, 0, 32, 32 )
@@ -170,7 +162,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 9/shapes = [  ]
 9/z_index = 0
 10/name = "nature-paltformer-tileset-16x16.png 10"
-10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 16, 16, 16, 16 )
@@ -191,7 +182,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 10/z_index = 0
 11/name = "nature-paltformer-tileset-16x16.png 11"
-11/texture = ExtResource( 1 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 16, 32, 16, 16 )
@@ -221,7 +211,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 11/z_index = 0
 12/name = "nature-paltformer-tileset-16x16.png 12"
-12/texture = ExtResource( 1 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 32, 32, 16, 16 )
@@ -242,7 +231,6 @@ points = PoolVector2Array( 4.04845, 15.3242, 6.14156, 13.9288, 5.44387, 5.3238, 
 } ]
 12/z_index = 0
 13/name = "nature-paltformer-tileset-16x16.png 13"
-13/texture = ExtResource( 1 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 0, 32, 16, 16 )
