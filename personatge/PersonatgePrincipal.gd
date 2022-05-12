@@ -23,15 +23,15 @@ func _physics_process(delta):
 		velocitat += Vector2.LEFT * velocitat_base
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocitat.y = velocitat_salt
-	velocitat = move_and_slide(velocitat, Vector2.UP)
-	if Input.is_action_just_pressed("ui_up"):
+	if Input.is_action_pressed("ui_up"):
 		if escaleras:
 			velocitat.y = -100
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_pressed("ui_down"):
 		if escaleras:
 			velocitat.y = 100
 			
 	anima(velocitat)
+	velocitat = move_and_slide(velocitat, Vector2.UP)
 
 func anima(velocitat):
 	if velocitat.x > 0:
