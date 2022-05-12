@@ -5,6 +5,7 @@ var direccio = Vector2.DOWN
 var velocitat = Vector2.ZERO
 var gravetat= Vector2.DOWN * 980
 var velocitat_salt = -400
+var escaleras = false
 
  
 
@@ -23,6 +24,13 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocitat.y = velocitat_salt
 	velocitat = move_and_slide(velocitat, Vector2.UP)
+	if Input.is_action_just_pressed("ui_up"):
+		if escaleras:
+			velocitat.y = -100
+	if Input.is_action_just_pressed("ui_down"):
+		if escaleras:
+			velocitat.y = 100
+			
 	anima(velocitat)
 
 func anima(velocitat):
@@ -47,3 +55,11 @@ func anima(velocitat):
 
 func _on_MortTerra_body_entered(body):
 	get_tree().change_scene("res://Escenes/Nivell1.tscn")
+
+
+func _on_Area2D_body_entered(body):
+	escaleras = true
+
+
+func _on_Area2D_body_exited(body):
+	escaleras = false
