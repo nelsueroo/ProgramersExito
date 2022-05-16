@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
+[ext_resource path="res://Escenes/Moneda.tscn" type="PackedScene" id=1]
 [ext_resource path="res://personatge/Personatge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Items/nature-paltformer-tileset-16x16.png" type="Texture" id=3]
 
@@ -1335,5 +1336,9 @@ scale = Vector2( 2, 2 )
 position = Vector2( 184.5, 103.75 )
 shape = SubResource( 21 )
 
+[node name="Moneda" parent="." instance=ExtResource( 1 )]
+position = Vector2( 430, 138 )
+
 [connection signal="body_entered" from="Area2D" to="Personatge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Personatge" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="Moneda" to="Personatge" method="_on_Moneda_body_entered"]
