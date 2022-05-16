@@ -63,3 +63,7 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_exited(body):
 	escaleras = false
+
+
+func _on_CollisionShape2D2_tree_entered():
+	get_tree().change_scene("res://Escenes/TileMap.tscn")
