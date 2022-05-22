@@ -6,6 +6,22 @@
 [ext_resource path="res://personatge/Pink_Monster_Walk_6.png" type="Texture" id=4]
 [ext_resource path="res://personatge/Pink_Monster_Idle_4.png" type="Texture" id=5]
 
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 5 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 5 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 5 )
+region = Rect2( 96, 0, 32, 32 )
+
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 32, 32 )
@@ -78,24 +94,13 @@ region = Rect2( 64, 0, 32, 32 )
 atlas = ExtResource( 2 )
 region = Rect2( 96, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 5 )
-region = Rect2( 32, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 5 )
-region = Rect2( 64, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 5 )
-region = Rect2( 96, 0, 32, 32 )
-
 [sub_resource type="SpriteFrames" id=8]
 animations = [ {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "quiet",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
 "loop": true,
 "name": "corre",
@@ -110,11 +115,6 @@ animations = [ {
 "loop": true,
 "name": "Disparar",
 "speed": 5.0
-}, {
-"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
-"loop": true,
-"name": "quiet",
-"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -128,7 +128,7 @@ position = Vector2( 36.5, 55.5 )
 scale = Vector2( 0.65625, 0.53125 )
 frames = SubResource( 8 )
 animation = "quiet"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
