@@ -4,12 +4,16 @@ var velocitat_base = 250
 var direccio = Vector2.DOWN
 var velocitat = Vector2.ZERO
 var gravetat= Vector2.DOWN * 980
-var velocitat_salt = -400
+var velocitat_salt = -440
 var escala =  false
  
 
-
 func _physics_process(delta):
+<<<<<<< Updated upstream
+	velocitat += gravetat * delta
+	velocitat = move_and_slide(velocitat, Vector2.UP)
+	
+=======
 	if not escala:
 		velocitat += gravetat * delta
 	else:
@@ -20,9 +24,10 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_down"):
 		if escala:
 			velocitat.y = 100
-			
+>>>>>>> Stashed changes
 	
 	velocitat.x = 0
+	velocitat += gravetat * delta
 	if Input.is_action_pressed("ui_right"):
 		velocitat += Vector2.RIGHT * velocitat_base
 	if Input.is_action_pressed("ui_left"):
@@ -51,8 +56,11 @@ func anima(velocitat):
 	
 
 
+
 func _on_MortTerra_body_entered(body):
 	get_tree().change_scene("res://Escenes/Nivell1.tscn")
+<<<<<<< Updated upstream
+=======
 
 
 func _on_Area2D_body_entered(body):
@@ -63,3 +71,18 @@ func _on_Area2D_body_exited(body):
 	escala = false
 
 
+func _on_Mort_body_entered(body):
+	get_tree().change_scene("res://Escenes/Tilemap3.tscn")
+
+
+func _on_Portal34_body_entered(body):
+	get_tree().change_scene("res://Escenes/Tilemap4.tscn")
+
+
+func _on_Mort4_body_entered(body):
+	get_tree().change_scene("res://Escenes/Tilemap4.tscn")
+
+
+func _on_Portal44_body_entered(body):
+	get_tree().change_scene("res://Escenes/Tilemap4.1.tscn")
+>>>>>>> Stashed changes
