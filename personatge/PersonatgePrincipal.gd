@@ -9,11 +9,6 @@ var escala =  false
  
 
 func _physics_process(delta):
-<<<<<<< Updated upstream
-	velocitat += gravetat * delta
-	velocitat = move_and_slide(velocitat, Vector2.UP)
-	
-=======
 	if not escala:
 		velocitat += gravetat * delta
 	else:
@@ -24,7 +19,6 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_down"):
 		if escala:
 			velocitat.y = 100
->>>>>>> Stashed changes
 	
 	velocitat.x = 0
 	velocitat += gravetat * delta
@@ -59,8 +53,6 @@ func anima(velocitat):
 
 func _on_MortTerra_body_entered(body):
 	get_tree().change_scene("res://Escenes/Nivell1.tscn")
-<<<<<<< Updated upstream
-=======
 
 
 func _on_Area2D_body_entered(body):
@@ -85,4 +77,4 @@ func _on_Mort4_body_entered(body):
 
 func _on_Portal44_body_entered(body):
 	get_tree().change_scene("res://Escenes/Tilemap4.1.tscn")
->>>>>>> Stashed changes
+
