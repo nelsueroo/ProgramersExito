@@ -4,7 +4,7 @@ var velocitat_base = 250
 var direccio = Vector2.DOWN
 var velocitat = Vector2.ZERO
 var gravetat= Vector2.DOWN * 980
-var velocitat_salt = -440
+var velocitat_salt = -600
 var escala =  false
  
 
@@ -78,3 +78,7 @@ func _on_Mort4_body_entered(body):
 func _on_Portal44_body_entered(body):
 	get_tree().change_scene("res://Escenes/Tilemap4.1.tscn")
 
+
+
+func _on_Portal23_body_entered(body):
+	get_tree().change_scene("res://Escenes/Tilemap3.tscn")
