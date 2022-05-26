@@ -5,9 +5,8 @@ var direccio = Vector2.DOWN
 var velocitat = Vector2.ZERO
 var gravetat= Vector2.DOWN * 980
 var velocitat_salt = -600
-var escala =  false
+var escala = false
  
-
 func _physics_process(delta):
 	if not escala:
 		velocitat += gravetat * delta
@@ -48,8 +47,6 @@ func anima(velocitat):
 	if velocitat.y < 0:
 		$AnimatedSprite.play("salta")
 	
-
-
 
 func _on_MortTerra_body_entered(body):
 	get_tree().change_scene("res://Escenes/Nivell1.tscn")
