@@ -4,7 +4,7 @@
 [ext_resource path="res://Items/Enemies/spikeBall1.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 78.3135
+radius = 17.0294
 
 [sub_resource type="Animation" id=2]
 resource_name = "Animacio Spikes"
@@ -56,6 +56,8 @@ tracks/1/keys = {
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -1 )
+scale = Vector2( 0.235916, 0.22973 )
 texture = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

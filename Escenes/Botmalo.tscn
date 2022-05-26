@@ -20,14 +20,14 @@ animations = [ {
 "name": "camina",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "quiet",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "salta",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "quiet",
 "speed": 5.0
 } ]
 

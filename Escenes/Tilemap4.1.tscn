@@ -1797,3 +1797,4 @@ position = Vector2( 43, 189 )
 [connection signal="body_entered" from="Area2D2" to="Personatge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D2" to="Personatge" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Mort4" to="Personatge" method="_on_Mort4_body_entered"]
+[connection signal="body_entered" from="Portal45" to="Personatge" method="_on_Portal45_body_entered"]
