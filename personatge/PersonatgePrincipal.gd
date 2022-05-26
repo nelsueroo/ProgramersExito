@@ -94,3 +94,8 @@ func _on_Spikes_body_entered(body):
 
 func _on_mort_body_entered(body):
 	get_tree().change_scene("res://Escenes/Tilemap6.tscn")
+
+
+func _on_PortalFinal_body_entered(body):
+	get_tree().change_scene("res://Final.tscn")
+	

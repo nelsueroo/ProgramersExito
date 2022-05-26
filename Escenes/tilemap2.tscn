@@ -1356,7 +1356,8 @@ shape = SubResource( 21 )
 scale = Vector2( 2, 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2( 43, 123.5 )
+position = Vector2( 31, 138.5 )
+scale = Vector2( 0.2, 0.5 )
 shape = SubResource( 21 )
 
 [node name="Moneda" parent="." instance=ExtResource( 1 )]
